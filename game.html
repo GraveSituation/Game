@@ -4,7 +4,13 @@
     <title>Billy Bob</title>
 </head>
 <body>
+ <document.body.addEventListener("keydown", function(e) {
+    keys[e.keyCode] = true;
+});
  
+document.body.addEventListener("keyup", function(e) {
+    keys[e.keyCode] = false/>
+});
 <script>
 // All of our JavaScript will go here.
 </script>
@@ -21,6 +27,28 @@ document.body.addEventListener("keyup", function(e) {
  
 <script>
 // All of our JavaScript will go here.
+// check keys
+   if (keys[38]) {
+       // up arrow
+   }
+   if (keys[39]) {
+       // right arrow
+       if (player.velX < player.speed) {                         
+           player.velX++;                  
+       }          
+   }          
+   if (keys[37]) {                 
+        // left arrow                  
+       if (player.velX > -player.speed) {
+           player.velX--;
+       }
+   }
+   
+1
+2
+player.x += player.velX;
+player.y += player.velY;
+
 (function() {
     var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
     window.requestAnimationFrame = requestAnimationFrame;
