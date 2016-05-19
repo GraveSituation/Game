@@ -13,43 +13,8 @@ document.body.addEventListener("keyup", function(e) {
 
 <script>
 // All of our JavaScript will go here.
-</script>
-</body>
-<document
-<canvas id="canvas" style="border:1px solid #000"></canvas>
-
-</html>
-<canvas id="canvas" style="border:1px solid #000"></canvas>
- 
-<script>
-// All of our JavaScript will go here.
-// check keys
-   if (keys[38]) {
-       // up arrow
-   }
-   if (keys[39]) {
-       // right arrow
-       if (player.velX < player.speed) {                         
-           player.velX++;                  
-       }          
-   }          
-   if (keys[37]) {                 
-        // left arrow                  
-       if (player.velX > -player.speed) {
-           player.velX--;
-       }
-   }
-
-1
-2
-player.x += player.velX;
-player.y += player.velY;
-if (player.x >= width-player.width) {
-    player.x = width-player.width;
-} else if (player.x <= 0) {
-    player.x = 0;
+  jumping : false
 }
-
 (function() {
     var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
     window.requestAnimationFrame = requestAnimationFrame;
@@ -66,8 +31,8 @@ var canvas = document.getElementById("canvas"),
     friction = 0.8;
     player.velX *= friction;
  
-canvas.width = width;
-canvas.height = height;
+canvas.width = 300
+canvas.height = 300
  
 // draw a small red box, which will eventually become our player.
 function update(){
@@ -116,6 +81,13 @@ player.y += player.velY;
   velY: 0
 }
 keys = [];
+</script>
+</body>
+<document
+
+</html>
+
+<script>
 
 </script>
 
