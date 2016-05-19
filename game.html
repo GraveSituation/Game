@@ -15,12 +15,8 @@ document.body.addEventListener("keyup", function(e) {
 // All of our JavaScript will go here.
 </script>
 </body>
-<document.body.addEventListener("keydown", function(e) {
-    keys[e.keyCode] = true;
-
- 
-document.body.addEventListener("keyup", function(e) {
-    keys[e.keyCode] = false;>
+<document
+<canvas id="canvas" style="border:1px solid #000"></canvas>
 
 </html>
 <canvas id="canvas" style="border:1px solid #000"></canvas>
@@ -48,6 +44,11 @@ document.body.addEventListener("keyup", function(e) {
 2
 player.x += player.velX;
 player.y += player.velY;
+if (player.x >= width-player.width) {
+    player.x = width-player.width;
+} else if (player.x <= 0) {
+    player.x = 0;
+}
 
 (function() {
     var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
@@ -118,3 +119,4 @@ keys = [];
 </script>
 
 
+</document>
