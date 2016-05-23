@@ -42,8 +42,13 @@ function update(){
 }
 window.addEventListener("load", function(){
   // check keys
-   if (keys[38]) {
-       // up arrow
+       if (keys[38] || keys[32]) {
+    // up arrow or space
+  if(!player.jumping){
+   player.jumping = true;
+   player.velY = -player.speed*2;
+  }
+}
    }
    if (keys[39]) {
        // right arrow
