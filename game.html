@@ -8,16 +8,17 @@
 <script src="gamedev.js"></script>
 </head>
 <body>
- <document.body.addEventListener("keydown", function(e) {
+
+ document.body.addEventListener("keydown", function(e) {
     keys[e.keyCode] = true;
 
  
 document.body.addEventListener("keyup", function(e) {
+<script>
  (function() {
     var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
     window.requestAnimationFrame = requestAnimationFrame;
 })();
-<
 var canvas = document.getElementById("canvas"),
     ctx = canvas.getContext("2d"),
     width = 500,
@@ -60,7 +61,7 @@ function update(){
             player.velX--;
         }
     }
- <script
+
     player.velX *= friction;
  
     player.velY += gravity;
@@ -98,9 +99,8 @@ window.addEventListener("load",function(){
     update();
 });   keys[e.keyCode] = false/>
 
-<script>
-
 </script>
+
 </body>
 </document>
 
