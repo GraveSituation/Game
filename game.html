@@ -5,13 +5,10 @@
 <body>
   <h3>Arrow keys to move, and space to jump</h3>
     <canvas id="canvas"></canvas>
-    document.body.addEventListener("keydown", function(e) {
-    keys[e.keyCode] = true;
-
- 
-document.body.addEventListener("keyup", function(e) {
-</body>
+    </body>
 <script>
+document.body.addEventListener("keydown", function(e) {
+    keys[e.keyCode] = true;
 document.body.addEventListener("keyup", function(e) {
   (function() {
     var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
