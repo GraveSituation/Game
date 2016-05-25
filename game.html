@@ -7,35 +7,6 @@
     <canvas id="canvas"></canvas>
     </body>
 <script>
-var boxes = []
- 
-// dimensions
-boxes.push({
-    x: 0,
-    y: 0,
-    width: 10,
-    height: height
-});
-boxes.push({
-    x: 0,
-    y: height - 2,
-    width: width,
-    height: 50
-});
-boxes.push({
-    x: width - 10,
-    y: 0,
-    width: 50,
-    height: height
-    ctx.fillStyle = "black";
-ctx.beginPath();
- 
-for (var i = 0; i < boxes.length; i++) {
-    ctx.rect(boxes[i].x, boxes[i].y, boxes[i].width, boxes[i].height);
-}
- 
-ctx.fill();
-});
 (function() {
     var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
     window.requestAnimationFrame = requestAnimationFrame;
@@ -120,7 +91,35 @@ document.body.addEventListener("keyup", function(e) {
 window.addEventListener("load",function(){
     update();
 });
-
+var boxes = []
+ 
+// dimensions
+boxes.push({
+    x: 0,
+    y: 0,
+    width: 10,
+    height: height
+});
+boxes.push({
+    x: 0,
+    y: height - 2,
+    width: width,
+    height: 50
+});
+boxes.push({
+    x: width - 10,
+    y: 0,
+    width: 50,
+    height: height
+    ctx.fillStyle = "black";
+ctx.beginPath();
+ 
+for (var i = 0; i < boxes.length; i++) {
+    ctx.rect(boxes[i].x, boxes[i].y, boxes[i].width, boxes[i].height);
+}
+ 
+ctx.fill();
+});
 </script>
 
 </body>
