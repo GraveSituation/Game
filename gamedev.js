@@ -1,4 +1,4 @@
-2
+$( document ).ready(function() {
 //Your jquery goes here
 (function () {
     var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
@@ -171,5 +171,4 @@ document.body.addEventListener("keyup", function (e) {
  
 window.addEventListener("load", function () {
     update();
-});
 });
