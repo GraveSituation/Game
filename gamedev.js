@@ -1,5 +1,4 @@
-$( document ).ready(function() {
-
+2
 //Your jquery goes here
 (function () {
     var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
