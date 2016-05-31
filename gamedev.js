@@ -129,7 +129,8 @@ function update() {
  
     requestAnimationFrame(update);
 }
- 
+ document.getElementById
+ <h3>Arrow keys to move, and space to jump</h3>
 function colCheck(shapeA, shapeB) {
     // get the vectors to check against
     var vX = (shapeA.x + (shapeA.width / 2)) - (shapeB.x + (shapeB.width / 2)),
