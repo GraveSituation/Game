@@ -44,3 +44,68 @@ body {
 	background-position: bottom center;
 
 }
+#myCar {
+  position: absolute;
+  background-image: url('http://png-3.findicons.com/files/icons/2770/ios_7_icons/50/cars.png');
+  height: 50px;
+  width: 50px;
+  
+}
+
+#whiteBlock {
+  position: fixed;
+  background-color: grey;
+  height: 50px;
+  width: 50px;
+  top: 200px;
+  left: 200px;
+}
+
+#brownBlock {
+  position: fixed;
+  background-color: brown;
+  height: 50px;
+  width: 50px;
+  top: 150px;
+  left: 300px;
+}
+
+#redBlock {
+  position: fixed;
+  background-color: red;
+  height: 50px;
+  width: 50px;
+  top: 120px;
+  left: 600px;
+}
+
+#blackBlock {
+  position: fixed;
+  background-image: url('http://ecx.images-amazon.com/images/I/41lKx66FQ5L._SL75_SS50_.jpg');
+  height: 50px;
+  width: 50px;
+  top: 100px;
+  left: 500px;
+}
+
+#result {
+  width: 100px;
+  height: 50px;
+  border: black 2px solid;
+}
+
+#win {
+  float: right;
+}
+
+#alwaysPizza{
+  width: 300px;
+  height: 200px;
+  float: right;
+  background-image: url("http://www.dogoilpress.com/data/wallpapers/6/FDS_378615.png");
+  background-size: 300px 200px
+}
+
+#header{
+  position: absolute;
+}
