@@ -86,7 +86,7 @@ function update() {
     }
     if (keys[39]) {
         // right arrow
-        if (player.velX < player.speed) {player.velX++;}} if (keys[37]){// left arrow//
+        if (player.velX < player.speed) {player.velX++;}} if (keys[37]){// left arrow 
             if (player.velX > -player.speed) {
             player.velX--;
         }
