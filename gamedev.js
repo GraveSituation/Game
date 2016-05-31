@@ -1,3 +1,4 @@
+<!DOCTYPE JAVASCRIPT>
 $( document ).ready(function() {
 //Your jquery goes here
 (function () {
