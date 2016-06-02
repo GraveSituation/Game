@@ -46,7 +46,7 @@ body {
 }
 #myCar {
   position: absolute;
-  background-image: url('http://png-3.findicons.com/files/icons/2770/ios_7_icons/50/cars.png');
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Solid_red_square.svg/512px-Solid_red_square.svg.png');
   height: 50px;
   width: 50px;
   
@@ -81,7 +81,7 @@ body {
 
 #blackBlock {
   position: fixed;
-  background-image: url('http://ecx.images-amazon.com/images/I/41lKx66FQ5L._SL75_SS50_.jpg');
+  background-image: url('http://www.craft.com.au/images/products/FPA13.jpg');
   height: 50px;
   width: 50px;
   top: 100px;
@@ -101,8 +101,6 @@ body {
 #alwaysPizza{
   width: 300px;
   height: 200px;
-  float: right;
-  background-image: url("http://www.dogoilpress.com/data/wallpapers/6/FDS_378615.png");
   background-size: 300px 200px
 }
 
