@@ -1,7 +1,9 @@
 
 $( document ).ready(function() {
-<<<<<<< HEAD
+
 //start with the document.ready to make sure the images are loaded
+
+
   //tell JavaScript what div is the sprite - use the div id
   var myCar = $("#myCar");
   $("#alwaysPizza").hide();
@@ -14,32 +16,32 @@ $( document ).ready(function() {
       //move left
       case 37:
         $(myCar).animate({
-          left: "-=100px"
+          left: "-=40px"
         }, 'fast');
         break;
 
         //move up
       case 38:
         $(myCar).animate({
-          top: "-=100px"
+          top: "-=40px"
         }, 'fast');
         break;
 
         //move right
       case 39:
         $(myCar).animate({
-          left: "+=100px"
+          left: "+=40px"
         }, 'fast');
         break;
 
         //move down
       case 40:
         $(myCar).animate({
-          top: "+=100px"
+          top: "+=40px"
         }, 'fast');
         break;
     };
-  }); //this is where the arrow key functionality ends
+  }); //this is were the arrow key functionality ends
 
   //this is where the JavaScript collision starts. First we define all the variables of how the collision will happen
   function collision($div1, $div2) {
@@ -60,30 +62,6 @@ $( document ).ready(function() {
     return true;
   }
 
-    animateDiv();
-
-function makeNewPosition(){
-    
-    // Get viewport dimensions (remove the dimension of the div)
-    var h = $(window).height() ;
-    var w = $(window).width() ;
-    
-    var nh = Math.floor(Math.random() * h);
-    var nw = Math.floor(Math.random() * w);
-    
-    return [nh,nw];    
-    
-}
-
-function animateDiv(){
-    var newq = makeNewPosition();
-  //James change .a to .othercar
-    $('.othercar').animate({ top: newq[0], left: newq[1] }, function(){
-      animateDiv();        
-    });
-    
-};
-
 
 //this is collision for the cars
   window.setInterval(function() {
@@ -98,10 +76,13 @@ function animateDiv(){
         window.location.href = 'game.html';
 
         //all the actions that happen during a collision go here
-200); //this is how often it checks for a collision
+
       }
     });
-  }, 
+  }, 200); //this is how often it checks for a collision
+
+
+
 
 //this is collision for the win box
  window.setInterval(function() {
@@ -118,12 +99,13 @@ function animateDiv(){
 
       }
     });
-  }, 
+  }, 200); //this is how often it checks for a collision
 
 
 
 
-}); //document.ready ends - do not delete!!!
+
+
 
 
 
