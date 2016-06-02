@@ -16,28 +16,28 @@ $( document ).ready(function() {
       //move left
       case 37:
         $(myCar).animate({
-          left: "-=40px"
+          left: "-=100px"
         }, 'fast');
         break;
 
         //move up
       case 38:
         $(myCar).animate({
-          top: "-=40px"
+          top: "-=100px"
         }, 'fast');
         break;
 
         //move right
       case 39:
         $(myCar).animate({
-          left: "+=40px"
+          left: "+=100px"
         }, 'fast');
         break;
 
         //move down
       case 40:
         $(myCar).animate({
-          top: "+=40px"
+          top: "+=100px"
         }, 'fast');
         break;
     };

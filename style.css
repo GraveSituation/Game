@@ -46,7 +46,7 @@ body {
 }
 #myCar {
   position: absolute;
-  background-image: url('http://png-3.findicons.com/files/icons/2770/ios_7_icons/50/cars.png');
+  background-image: url('http://orig11.deviantart.net/2e00/f/2007/040/b/7/photo__large_red_square_by_thelastdanishpastry.png');
   height: 50px;
   width: 50px;
   
@@ -81,7 +81,7 @@ body {
 
 #blackBlock {
   position: fixed;
-  background-image: url('http://ecx.images-amazon.com/images/I/41lKx66FQ5L._SL75_SS50_.jpg');
+  background-image: url('http://www.craft.com.au/images/products/FPA13.jpg');
   height: 50px;
   width: 50px;
   top: 100px;
