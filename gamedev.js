@@ -81,31 +81,6 @@ $( document ).ready(function() {
     });
   }, 200); //this is how often it checks for a collision
 
-    animateDiv();
-
-function makeNewPosition(){
-    
-    // Get viewport dimensions (remove the dimension of the div)
-    var h = $(window).height() ;
-    var w = $(window).width() ;
-    
-    var nh = Math.floor(Math.random() * h);
-    var nw = Math.floor(Math.random() * w);
-    
-    return [nh,nw];    
-    
-}
-
-function animateDiv(){
-    var newq = makeNewPosition();
-  //James change .a to .othercar
-    $('.othercar').animate({ top: newq[0], left: newq[1] }, function(){
-      animateDiv();        
-    });
-    
-};
-
-
 
 //this is collision for the win box
  window.setInterval(function() {
@@ -128,7 +103,111 @@ function animateDiv(){
 
 
 
+ //randomization #pizza1
 
+    animateDiv();
+
+    function makeNewPosition() {
+
+      // Get viewport dimensions (remove the dimension of the div)
+      var h = $(window).height();
+      var w = $(window).width();
+
+      var nh = Math.floor(Math.random() * h);
+      var nw = Math.floor(Math.random() * w);
+
+      return [nh, nw];
+
+    }
+
+    function animateDiv() {
+      var newq = makeNewPosition();
+      $('#whiteBlock').animate({
+        top: newq[0],
+        left: newq[1]
+      }, function() {
+        animateDiv();
+      });
+    };
+//randomization for #pizza2
+        animateDiv1();
+
+    function makeNewPosition1() {
+
+      // Get viewport dimensions (remove the dimension of the div)
+      var h = $(window).height();
+      var w = $(window).width();
+
+      var nh = Math.floor(Math.random() * h);
+      var nw = Math.floor(Math.random() * w);
+
+      return [nh, nw];
+
+    }
+
+    function animateDiv1() {
+      var newq = makeNewPosition1();
+      $('#brownBlock').animate({
+        top: newq[0],
+        left: newq[1]
+      }, function() {
+        animateDiv1();
+      });
+    };
+    
+    //randomzation for #pizza3
+        animateDiv2();
+
+    function makeNewPosition2() {
+
+      // Get viewport dimensions (remove the dimension of the div)
+      var h = $(window).height();
+      var w = $(window).width();
+
+      var nh = Math.floor(Math.random() * h);
+      var nw = Math.floor(Math.random() * w);
+
+      return [nh, nw];
+
+    }
+
+    function animateDiv2() {
+      var newq = makeNewPosition2();
+      $('#redBlock').animate({
+        top: newq[0],
+        left: newq[1]
+      }, function() {
+        animateDiv2();
+      });
+    };
+    
+    //randomization for #broc
+        animateDiv3();
+
+    function makeNewPosition3() {
+
+      // Get viewport dimensions (remove the dimension of the div)
+      var h = $(window).height();
+      var w = $(window).width();
+
+      var nh = Math.floor(Math.random() * h);
+      var nw = Math.floor(Math.random() * w);
+
+      return [nh, nw];
+
+    }
+
+    function animateDiv3() {
+      var newq = makeNewPosition3();
+      $('#broc').animate({
+        top: newq[0],
+        left: newq[1]
+      }, function() {
+        animateDiv3();
+      });
+    };
+    
+    //end randomization
 
 
 
