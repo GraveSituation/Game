@@ -199,7 +199,7 @@ $( document ).ready(function() {
 
     function animateDiv3() {
       var newq = makeNewPosition3();
-      $('#broc').animate({
+      $('#blackBlock').animate({
         top: newq[0],
         left: newq[1]
       }, function() {
