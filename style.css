@@ -44,6 +44,7 @@ body {
 	background-position: bottom center;
 
 }
+<<<<<<< HEAD
 #myCar {
   position: absolute;
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Solid_red_square.svg/512px-Solid_red_square.svg.png');
@@ -107,3 +108,5 @@ body {
 #header{
   position: absolute;
 }
+=======
+>>>>>>> parent of dd7038d... Added you win screen
