@@ -17,28 +17,28 @@ $( document ).ready(function() {
       case 37:
         $(myCar).animate({
           left: "-=100px"
-        }, 'slow');
+        }, 'fast');
         break;
 
         //move up
       case 38:
         $(myCar).animate({
           top: "-=100px"
-        }, 'slow');
+        }, 'fast');
         break;
 
         //move right
       case 39:
         $(myCar).animate({
           left: "+=100px"
-        }, 'slow');
+        }, 'fast');
         break;
 
         //move down
       case 40:
         $(myCar).animate({
           top: "+=100px"
-        }, 'slow');
+        }, 'fast');
         break;
     };
   }); //this is were the arrow key functionality ends
